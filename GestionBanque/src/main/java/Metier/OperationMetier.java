@@ -9,6 +9,6 @@ public interface OperationMetier {
 	public boolean Verser(String code, double montant, Long codeEmpl);
 	public boolean Retirer (String code, double montant, Long codeEmpl);
 	public boolean Virement( String cpt1, String cpt2, double solde, Long codeEmpl);
-	public PageOperation getOperations(String codeC, int page, int size);
+	//public Page<Operation> ListOperations(String codeC, int page, int size);
 
 }

@@ -12,6 +12,6 @@ import Entities.Operation;
 
 public interface OperationRepository extends JpaRepository <Operation,Long>{
 
-	@Query("select o from Operation o where o.compte.codeCompte=:x  order by o.dateOperation desc")  //
-	public Page<Operation>  listOperation(@Param("x")String codeCompte,PageRequest pageRequest);
+	//@Query("select o from Operation o where o.compte.codeCompte=:x  order by o.dateOperation desc")  
+	//public Page<Operation>  listOperation(@Param("x")String codeCompte,Pageable pageable);
 }
